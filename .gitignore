@@ -1,23 +1,24 @@
 # Don't keep any unlisted files. This is a working directory which will contain a lot of noise.
 *
 
-# Build environments. Keep directorh, but not the contents.
-!/ubuntu
-!/ubuntu22
-!/windows
-!/mingw
-!/cygwin
+# Build environments. Keep directory only. Each build environment has its own .gitignore to ignore contents.
+#   Alternative is to create a "build" directory, with all configurations under it.
+!/ubuntu/
+!/ubuntu22/
+!/windows/
+!/mingw/
+!/cygwin/
 
-!.gitignore
-!.gitmodules
-!CMakeLists.txt
+# Keep the following in the main dirctory.
+!/.gitignore
+!/CMakeLists.txt
 !/*.sh
 
-# Keep the JetBrains configuration, except the sorkspace and tasks
+# Keep the JetBrains configuration, except the workspace and tasks.
 !/.idea/
 /.idea/workspace.xml
 /.idea/tasks.xml
 
-3 Always ignoe these or it confuses git
+# Always ignore these. They seem to confuse git.
 .gitmodules
 .idea/modules.xml
