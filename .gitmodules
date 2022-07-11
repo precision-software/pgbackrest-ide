@@ -1,3 +1,0 @@
-[submodule "pgbackrest"]
-	path = pgbackrest
-	url = https://github.com/pgbackrest/pgbackrest.git

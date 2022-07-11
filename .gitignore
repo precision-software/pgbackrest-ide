@@ -14,6 +14,10 @@
 !/*.sh
 
 # Keep the JetBrains configuration, except the sorkspace and tasks
-!/.idea/**
+!/.idea/
 /.idea/workspace.xml
 /.idea/tasks.xml
+
+3 Always ignoe these or it confuses git
+.gitmodules
+.idea/modules.xml
