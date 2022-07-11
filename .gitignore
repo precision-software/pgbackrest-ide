@@ -1,0 +1,19 @@
+# Don't keep any unlisted files. This is a working directory which will contain a lot of noise.
+*
+
+# Build environments. Keep directorh, but not the contents.
+!/ubuntu
+!/ubuntu22
+!/windows
+!/mingw
+!/cygwin
+
+!.gitignore
+!.gitmodules
+!CMakeLists.txt
+!/*.sh
+
+# Keep the JetBrains configuration, except the sorkspace and tasks
+!/.idea
+/.idea/workspace.xml
+/.idea/tasks.xml
